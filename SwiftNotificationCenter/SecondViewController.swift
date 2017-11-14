@@ -16,6 +16,8 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var notificationLabel03: UILabel!
     
+    @IBOutlet weak var notificationLabel04: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +49,14 @@ class SecondViewController: UIViewController {
             self.notificationLabel03.isHidden = false
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(genImageForVideo4), name: Notification.Name("genImageForVideo4"), object: self)
+        
+        
+    }
+    
+    @objc func genImageForVideo4(){
+        
+        self.notificationLabel04.isHidden = false
         
     }
     

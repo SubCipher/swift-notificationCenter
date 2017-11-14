@@ -44,6 +44,15 @@
                                     <segue destination="iRI-YN-w7C" kind="show" id="llD-0G-ybm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jde-Fx-bLp">
+                                <rect key="frame" x="109" y="420" width="155" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Notification 04"/>
+                                <connections>
+                                    <action selector="NotificationButtonAction04:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33k-xR-ZO9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -53,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="-334"/>
+            <point key="canvasLocation" x="477.60000000000002" y="-334.18290854572717"/>
         </scene>
         <!--Item-->
         <scene sceneID="2C0-3k-JXR">
@@ -89,6 +98,13 @@
                                 <color key="textColor" red="0.28865095369999999" green="0.39716856140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NotificationLabel04" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG8-0l-KAN">
+                                <rect key="frame" x="86" y="417" width="228" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="9Ti-4F-jUK"/>
@@ -98,11 +114,12 @@
                         <outlet property="notificationLabel01" destination="9vD-Fc-vRt" id="L1J-SG-iSD"/>
                         <outlet property="notificationLabel02" destination="YCH-rM-1gj" id="gog-B7-bSH"/>
                         <outlet property="notificationLabel03" destination="0ln-QQ-Wc9" id="bsD-bR-1jx"/>
+                        <outlet property="notificationLabel04" destination="lG8-0l-KAN" id="5yR-FG-P1W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ga-lc-cOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1756" y="145"/>
+            <point key="canvasLocation" x="1756" y="144.3778110944528"/>
         </scene>
         <!--Item-->
         <scene sceneID="Uvb-tL-vVo">
@@ -129,6 +146,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OVG-1c-Oge" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CAB-yD-oZN">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>

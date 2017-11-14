@@ -32,4 +32,12 @@ class MapViewController: UIViewController {
         NotificationCenter.default.post(name: VIDEO_TMBNAIL03, object: nil)
     }
     
+    @IBAction func NotificationButtonAction04(_ sender: Any) {
+        
+        NotificationCenter.default.post(name: Notification.Name(VIDEO_TMBNAIL04.rawValue), object: self)
+         print("sender from04")
+        
+    }
+    
+    
 }
