@@ -12,10 +12,9 @@ class MapViewController: UIViewController {
 
    
     @IBAction func notificationButtonAction(_ sender: Any) {
+        //add notification center and broadcast notification msg
         NotificationCenter.default.post(name: REFRESH_NOTIFICATION, object: nil)
     }
-    
-    
     
     
 }
