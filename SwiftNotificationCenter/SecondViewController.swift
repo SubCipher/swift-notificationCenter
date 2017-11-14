@@ -10,18 +10,48 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet weak var notificationLabel: UILabel!
+    @IBOutlet weak var notificationLabel01: UILabel!
+    
+    @IBOutlet weak var notificationLabel02: UILabel!
+    
+    @IBOutlet weak var notificationLabel03: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+     callNotificationOne()
+
+    }
+  
+    
+    func callNotificationOne(){
         //add an observer to listen for notification broadcast
-        NotificationCenter.default.addObserver(forName: REFRESH_NOTIFICATION, object: nil, queue: nil) { notification in
+        NotificationCenter.default.addObserver(forName: VIDEO_TMBNAIL01, object: nil, queue: nil) { notification in
             
             //if notification is recieved run this block:
             print("notification \(notification)")
-            self.notificationLabel.isHidden = false
+            self.notificationLabel01.isHidden = false
         }
+        
+        
+        NotificationCenter.default.addObserver(forName: VIDEO_TMBNAIL02, object: nil, queue: nil) { notification in
+            print("notification \(notification)")
+            DispatchQueue.main.async {
+                 self.notificationLabel02.isHidden = false
+            }
+           
+        }
+        
+        NotificationCenter.default.addObserver(forName: VIDEO_TMBNAIL03, object: nil, queue: nil) { notification in
+            print("notification \(notification)")
+            self.notificationLabel03.isHidden = false
+        }
+        
+        
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
 
 }

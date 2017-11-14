@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TAl-Mv-zXK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OVG-1c-Oge">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,27 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="25E-cX-Fi7">
-                                <rect key="frame" x="0.0" y="59" width="375" height="609"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuC-UA-5Pn">
-                                <rect key="frame" x="289" y="20" width="53" height="30"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BY-Qb-ZXC">
+                                <rect key="frame" x="137" y="349" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Refresh"/>
+                                <state key="normal" title="Notification 03"/>
                                 <connections>
-                                    <action selector="notificationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o1b-Qe-pTu"/>
+                                    <action selector="NotificationButtonAction03:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3P-Su-b3w"/>
+                                    <segue destination="iRI-YN-w7C" kind="show" id="N7k-BG-L31"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuC-UA-5Pn">
+                                <rect key="frame" x="137" y="169" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Notification 01"/>
+                                <connections>
+                                    <action selector="notificationButtonAction01:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eqm-ri-pv1"/>
+                                    <segue destination="iRI-YN-w7C" kind="show" id="uFX-tZ-t0V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1v-1v-dhK">
+                                <rect key="frame" x="137" y="256" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Notification 02"/>
+                                <connections>
+                                    <action selector="NotificationButtonAction02:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKw-4D-C4L"/>
+                                    <segue destination="iRI-YN-w7C" kind="show" id="llD-0G-ybm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ara-Hz-2FN"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="OkV-3i-c45"/>
+                    <navigationItem key="navigationItem" id="gS6-u5-aZR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="-172"/>
+            <point key="canvasLocation" x="478" y="-334"/>
         </scene>
         <!--Item-->
         <scene sceneID="2C0-3k-JXR">
@@ -52,11 +68,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Second Button"/>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification sent" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vD-Fc-vRt">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification 01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vD-Fc-vRt">
                                 <rect key="frame" x="86" y="229" width="202" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.28865095369729943" green="0.39716856135574841" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification 02" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCH-rM-1gj">
+                                <rect key="frame" x="86" y="288" width="202" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.28865095369999999" green="0.39716856140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification 03" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ln-QQ-Wc9">
+                                <rect key="frame" x="86" y="357" width="202" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.28865095369999999" green="0.39716856140000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -65,30 +95,54 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="seP-vZ-V4r"/>
                     <connections>
-                        <outlet property="notificationLabel" destination="9vD-Fc-vRt" id="KZy-j9-D3R"/>
+                        <outlet property="notificationLabel01" destination="9vD-Fc-vRt" id="L1J-SG-iSD"/>
+                        <outlet property="notificationLabel02" destination="YCH-rM-1gj" id="gog-B7-bSH"/>
+                        <outlet property="notificationLabel03" destination="0ln-QQ-Wc9" id="bsD-bR-1jx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ga-lc-cOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="562.66866566716647"/>
+            <point key="canvasLocation" x="1756" y="145"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Uvb-tL-vVo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HSr-UH-LLA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="ara-Hz-2FN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bot-gD-wtA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vXw-Ps-3nr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wN-Sc-b5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-647" y="-624"/>
         </scene>
         <!--Tab Bar Controller-->
-        <scene sceneID="2dp-EY-ySd">
+        <scene sceneID="TWY-Bd-aSL">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TAl-Mv-zXK" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OVG-1c-Oge" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="icb-TD-YmW">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CAB-yD-oZN">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="rSf-v5-Enq"/>
-                        <segue destination="iRI-YN-w7C" kind="relationship" relationship="viewControllers" id="5Ry-6t-K3N"/>
+                        <segue destination="HSr-UH-LLA" kind="relationship" relationship="viewControllers" id="5Th-Ns-Xnh"/>
+                        <segue destination="iRI-YN-w7C" kind="relationship" relationship="viewControllers" id="7qu-54-18M"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2gP-Jd-zKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yjd-Fr-ie5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-766.39999999999998" y="126.83658170914543"/>
+            <point key="canvasLocation" x="-1641" y="-308"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="N7k-BG-L31"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,7 @@
 		20DDA3B01FBA836F00F7E5AD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDA3AF1FBA836F00F7E5AD /* MapViewController.swift */; };
 		20DDA3B21FBA847300F7E5AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDA3B11FBA847300F7E5AD /* SecondViewController.swift */; };
 		20DDA3B41FBA871300F7E5AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DDA3B31FBA871300F7E5AD /* Constants.swift */; };
+		20DDA3B61FBB75B700F7E5AD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 20DDA3B51FBB75B700F7E5AD /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		20DDA3AF1FBA836F00F7E5AD /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		20DDA3B11FBA847300F7E5AD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		20DDA3B31FBA871300F7E5AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		20DDA3B51FBB75B700F7E5AD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		20DDA38E1FBA22F600F7E5AD = {
 			isa = PBXGroup;
 			children = (
+				20DDA3B51FBB75B700F7E5AD /* README.md */,
 				20DDA3991FBA22F600F7E5AD /* SwiftNotificationCenter */,
 				20DDA3981FBA22F600F7E5AD /* Products */,
 				20DDA3AC1FBA833800F7E5AD /* Frameworks */,
@@ -148,6 +151,7 @@
 			files = (
 				20DDA3A51FBA22F600F7E5AD /* LaunchScreen.storyboard in Resources */,
 				20DDA3A21FBA22F600F7E5AD /* Assets.xcassets in Resources */,
+				20DDA3B61FBB75B700F7E5AD /* README.md in Resources */,
 				20DDA3A01FBA22F600F7E5AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
